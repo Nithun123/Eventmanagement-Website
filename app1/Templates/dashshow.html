@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>category</title>
+    <link rel="stylesheet" href="{% static 'css/dashshow.css' %}">
+
+</head>
+<body class="main">
+<table class="container">
+    <thead class="thead-dark">
+    <div class="hedding">
+    <tr id="header">
+        <th>Event Name</th>
+        <th>Event Price</th>
+        <th>Action</th>
+    </tr>
+    </div>
+    </thead>
+    <tbody>
+{% for events in event %}
+    <tr>
+        <td>{{ events.ename }}</td>
+        <td>{{ events.eprice }}</td>
+        <td>
+        <a href="detail{{event.id}}">Book Now</a>
+
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+        <br>
+
+
+
+</table>
+
+</body>
+</html>

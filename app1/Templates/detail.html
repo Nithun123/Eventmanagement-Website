@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+</head>
+<body>
+<form method="post" class="post-form" action="">
+    {% csrf_token %}
+    <div class="container">
+
+         Name : <input type="text" id="name" class="input-box"  maxlength="100" value="{{ new_users.name }}"/><br>
+
+        <label for="phone"> Phone :</label>
+        <input type="text" id="phone" class="input-box" name="phone" required maxlength="100" value="{{ new_user.Contact }}"/><br>
+        <label for="phone"> Price :</label>
+        <input type="text" id="price" class="input-box" name="price" required maxlength="100" value="{{ new_user.price }}"><br>
+        <label for="cat"> Ctegory :</label>
+        <input type="text" id="cat" class="input-box" name="category" maxlength="100" value="{{ event.ename }}"/><br>
+        <label for="place"> Place:</label>
+        <input type="text" id="place" class="input-box" name="place" required><br>
+        <label for="person"> No Of Persons:</label>
+        <input type="text" id="person" class="input-box" name="person" required><br>
+
+        <label for="date">Start Date:</label>
+        <input type="date" id="date" class="input-box1" name="startdate" required><br>
+        <label for="date">End Date:</label>
+        <input type="date" id="edate" class="input-box1" name="enddate" required><br>
+
+
+        <p>Chooce Your Favorate Food</p>
+        <input type="radio" id="food1" name="food" class="input-box2" value="VEG" >VEG<br>
+        <input type="radio" id="food2" name="food" class="input-box2" value="Non Veg" >Non Veg<br>
+        <input type="radio" id="food3" name="food" class="input-box2" value="Arabic" >Arabic<br>
+        <input type="radio" id="food4" name="food" class="input-box2" value="Chineas" >Chines<br>
+
+
+        <input type="checkbox" id="brake" class="input-box3" name="time" value="Break Fast" >Brake Fast<br>
+        <input type="checkbox" id="lunch" class="input-box3" name="time" value="Lunch" >Lunch<br>
+        <input type="checkbox" id="dinner" class="input-box3" value="Dinner" name="time" >Dinner<br>
+
+        <p>Decorations</p>
+        <label for="lights">Light:</label>
+        <div class="select">
+        <select name="lights" id="lights">
+            <option value="no">No</option>
+            <option value="normal">Normal</option>
+            <option value="delux">Delux</option>
+            <option value="royal">Royal</option>
+        </select>
+        </div>
+        <br>
+        <label for="flower">Flower:</label>
+        <div class="select1">
+        <select name="flower"  id="flower">
+            <option value="no">No</option>
+            <option value="normal">Normal</option>
+            <option value="delux">Delux</option>
+            <option value="royal">Royal</option>
+        </select>
+        </div>
+        <br>
+        <label for="seet">seetings:</label>
+        <div class="select2">
+        <select name="seet" id="seet">
+            <option value="select">Select</option>
+            <option value="Chair">Chair</option>
+            <option value="Chair & Sofa">Chair&Sofa</option>
+            <option value="SOfa">Sofa</option>
+        </select>
+        </div>
+        <br>
+        <label for="eq">Equpment:</label>
+        <div class="select3">
+        <select name="equpment" id="eq">
+            <option value="no">No</option>
+            <option value="stage">Stage</option>
+            <option value="OPen stage">Open Stage</option>
+        </select>
+        </div>
+        <br>
+        <div class="radio">
+            <p>Other</p>
+            <input type="checkbox" id="music" name="music" value="music" required>
+            <label for="music">Music&Photo</label><br>
+        </div>
+        <div class="submit">
+        <button type="submit"  id="submit">Done</button>
+        </div>
+    </div>
+</form>
+
+ </body>
+ </html>

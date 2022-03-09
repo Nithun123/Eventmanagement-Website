@@ -1,0 +1,18 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+        width: 300px;
+        padding: 100px 50px;
+        margin: 10% auto 0;
+        box-sizing: border-box;
+        justify-content: center;
+        text-align: center;
+        background: #d1e0e0;
+        box-shadow: 5px 5px 30px 5px #888888;
+}
+.in-box{
+    width: 100%;
+    padding:10px 20px;
+}

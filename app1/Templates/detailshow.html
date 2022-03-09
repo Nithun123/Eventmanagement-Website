@@ -1,0 +1,62 @@
+
+
+{% load static %}
+<!<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashshow1.css' %}">
+</head>
+<body>
+
+<table class="tables">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Phone No</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Place</th>
+        <th>No of Person</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Food</th>
+        <th>Time</th>
+        <th>Lights</th>
+        <th>Flower</th>
+        <th>Seet</th>
+        <th>Equpments</th>
+        <th>music</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    {% for details in detail %}
+    <tbody>
+
+    <tr>
+        <td>{{ details.name }}</td>
+        <td>{{ details.phone }}</td>
+        <td>{{ details.price }}</td>
+        <td>{{ details.category }}</td>
+        <td>{{ details.place }}</td>
+        <td>{{ details.person }}</td>
+        <td>{{ details.startdate }}</td>
+        <td>{{ details.enddate }}</td>
+        <td>{{ details.food }}</td>
+        <td>{{ details.time }}</td>
+        <td>{{ details.light }}</td>
+        <td>{{ details.flower }}</td>
+        <td>{{ details.seet }}</td>
+        <td>{{ details.equpment }}</td>
+        <td>{{ details.music }}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

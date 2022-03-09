@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signin</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sign.css' %}"/>
+</head>
+<body>
+    <div class="sign-in">
+        <h1>Sign in</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <input type="email" name="email" class="input-box" placeholder="E-mail"><br>
+            <input type="password" name="pass1" class="input-box" placeholder="Password"><br>
+
+            <input type="submit" value="Sign in" class="submit">
+        </form>
+        <a href="/signup"><b>Sign up</b></a>
+    </div>
+</body>
+</html>

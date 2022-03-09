@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pay</title>
+    <link rel="stylesheet" href="{% static 'css/pay.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <form action="" methode="post">
+                <div class="box">
+                    <input type="text" placeholder="price" class="in-box" name="price">
+                    <input type="text" placeholder="Card no" class="in-box" name="card">
+                    <input type="text" placeholder="Name on Card" class="in-box" name="name">
+                    <input type="text" placeholder="CVV" class="in-box" name="cvv">
+                    <input type="text" placeholder="IFSC" class="in-box" name="ifsc"><br>
+                    <button type="submit" id="submit" >Pay</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+</html>

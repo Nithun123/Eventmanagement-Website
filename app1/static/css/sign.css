@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+
+   
+}
+.sign-in{
+    width: 300px;
+    padding: 50px 20px;
+    margin: 10% auto 0;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    background:  #00b3b3;
+    box-shadow: 5px 5px 30px 5px #888888;
+}
+.sign-in h1{
+    color: black;
+    font-family: century;
+
+}
+.input-box{
+      width: 100%;
+      padding: 10px 20px;
+      margin: 8px auto 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid ;
+}
+.sign-in a{
+    color: white;
+    text-decoration: none;
+
+
+    transition: all .5s ease-out;
+}
+.sign-in a:hover{
+    background-color: white;
+    color: blue;
+    box-shadow: 0 0  10px white;
+}
+.submit{
+    background: white;
+    border:none;
+    color: blue;
+    font-family: century;
+
+}

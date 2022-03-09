@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+    <link rel="stylesheet" href="{% static 'css/dashshow.css' %}">
+</head>
+<body class="main">
+<table class="container" >
+    <thead class="thead-dark">
+    <div class="hedding">
+    <tr id="header">
+        <th>Event Name</th>
+        <th>Event Price</th>
+        <th>Action</th>
+    </tr>
+    </div>
+    </thead>
+    <tbody>
+{% for events in event %}
+    <tr>
+        <td>{{ events.ename }}</td>
+        <td>{{ events.eprice }}</td>
+        <td>
+        <a href="/dele/{{events.id}}">delete</a>
+
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+        <br>
+<div class="btn">
+    <a href="/dashboard" >Add Category</a>
+    <a href="/show" >Show Category</a>
+    <a href="/details" >Show Details</a>
+</div>
+</table>
+</body>
+</html>

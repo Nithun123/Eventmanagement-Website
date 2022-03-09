@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/contact1.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <div class="content">
+            <div class="content-form">
+                <section>
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    <h2>address</h2>
+                    <p>
+                        Nandidhurga Road, <br>
+                        Banglore,Karnataka<br>
+                        550068
+                    </p>
+                </section>
+
+                <section>
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    <h2>Phone</h2>
+                    <p>9988654329</p>
+                </section>
+
+                <section>
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    <h2>E-mail</h2>
+                    <p>event123@gmail.com</p>
+                </section>
+            </div>
+        </div>
+
+      <form method="post" action="#">
+            {% csrf_token %}
+        <div class="form">
+            <div class="right">
+              <div class="contact-form">
+                  <input type="text" name="name" required>
+                  <span>Name</span>
+              </div>
+
+              <div class="contact-form">
+                  <input type="E-mail" name="email" required>
+                  <span>E-mail</span>
+              </div>
+              <div class="contact-form">
+                  <textarea name="message">
+
+                  </textarea>
+                  <span> Type your Message....</span>
+              </div>
+
+              <div class="contact-form">
+                  <input type="submit" name="submit">
+              </div>
+              </div>
+             </div>
+        </div>
+    </form>
+
+    </div>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="{% static 'css/edit.css' %}"/>
+</head>
+<body>
+<form method="POST" class="post-form" action="/update/{{employee.id}}">
+        {% csrf_token %}
+    <div class="container">
+<br>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <h3>Update Details</h3>
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Name : <input type="text" name="name" id="name" required maxlength="100" value="{{ details.name }}"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Phone No : <input type="text" name="phone" id="phone" required maxlength="100" value="{{ details.phone no }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Category : <input type="text" name="category" id="category" required maxlength="100" value="{{ details.category }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Place : <input type="text" name="place" id="place" required maxlength="100" value="{{ details.place }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        No Of Person : <input type="text" name="person" id="person" required maxlength="100" value="{{ details.person }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Startdate : <input type="text" name="date" id="date" required maxlength="100" value="{{ details.date }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Enddate : <input type="text" name="date" id="date1" required maxlength="100" value="{{ details.date }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Food : <input type="text" name="food" id="food" required maxlength="100" value="{{ details.food }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Time : <input type="text" name="time" id="time" required maxlength="100" value="{{ details.time }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Light : <input type="text" name="light" id="light" required maxlength="100" value="{{ details.light }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Flower : <input type="text" name="flower" id="flower" required maxlength="100" value="{{ details.flower }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        seet : <input type="text" name="seet" id="seet" required maxlength="100" value="{{ details.seet }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Equpment : <input type="text" name="name" id="equpment" required maxlength="100" value="{{ details.equpment }}" />
+    </div>
+  </div>
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-4">
+        Music : <input type="text" name="music" id="music" required maxlength="100" value="{{ details.music }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <button type="submit" id="submit" class="btn btn-success">Update</button>
+    </div>
+  </div>
+    </div>
+</form>
+</body>
+</html>

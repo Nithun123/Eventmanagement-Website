@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="{% static 'css/d1.css' %}"/>
+</head>
+<body>
+<form method="POST" class="post-form" action="">
+        {% csrf_token %}
+    <div class="container">
+         <h2 class="headding">Category</h2>
+        <label for="name" class="inbox"> Event Name:</label>
+        <input type="text" id="name" name="ename"><br>
+        <label for="name" class="inbox"> Event Price:</label>
+        <input type="text" id="price" name="eprice"><br>
+        <div class="submit">
+            <button type="submit" id="submitid" class="btn btn-primary">add</button>
+    </div>
+    </div>
+</form>
+</body>
